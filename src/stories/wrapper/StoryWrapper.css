@@ -1,0 +1,12 @@
+.story-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Vazir, 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  padding: 48px 20px;
+  margin: 0 auto;
+  color: #333;
+}
