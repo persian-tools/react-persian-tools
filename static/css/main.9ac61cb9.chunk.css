@@ -1,0 +1,79 @@
+.story-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Vazir, 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  padding: 48px 20px;
+  margin: 0 auto;
+  color: #333;
+}
+@font-face {
+    font-family: Vazir;
+    src: url(../../static/media/Vazir-Regular.101e51cc.eot);
+    src: url(../../static/media/Vazir-Regular.101e51cc.eot?#iefix) format('embedded-opentype'),
+        url(../../static/media/Vazir-Regular.6ad28012.woff2) format('woff2'),
+        url(../../static/media/Vazir-Regular.70c87610.woff) format('woff'),
+        url(../../static/media/Vazir-Regular.1c99958c.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url(../../static/media/Vazir-Bold.5ee5b9b2.eot);
+    src: url(../../static/media/Vazir-Bold.5ee5b9b2.eot?#iefix) format('embedded-opentype'),
+        url(../../static/media/Vazir-Bold.39c5d58e.woff2) format('woff2'),
+        url(../../static/media/Vazir-Bold.ea1a0dd0.woff) format('woff'),
+        url(../../static/media/Vazir-Bold.9c9f9e29.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url(../../static/media/Vazir-Black.63f96c96.eot);
+    src: url(../../static/media/Vazir-Black.63f96c96.eot?#iefix) format('embedded-opentype'),
+        url(../../static/media/Vazir-Black.58c2bf3e.woff2) format('woff2'),
+        url(../../static/media/Vazir-Black.d40153f6.woff) format('woff'),
+        url(../../static/media/Vazir-Black.bba24d95.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url(../../static/media/Vazir-Medium.9664b37c.eot);
+    src: url(../../static/media/Vazir-Medium.9664b37c.eot?#iefix) format('embedded-opentype'),
+        url(../../static/media/Vazir-Medium.5edb1d98.woff2) format('woff2'),
+        url(../../static/media/Vazir-Medium.e86c60a6.woff) format('woff'),
+        url(../../static/media/Vazir-Medium.e5160ecf.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url(../../static/media/Vazir-Light.fa7b5eed.eot);
+    src: url(../../static/media/Vazir-Light.fa7b5eed.eot?#iefix) format('embedded-opentype'),
+        url(../../static/media/Vazir-Light.98cb54cc.woff2) format('woff2'),
+        url(../../static/media/Vazir-Light.635b61bc.woff) format('woff'),
+        url(../../static/media/Vazir-Light.d961f1d9.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url(../../static/media/Vazir-Thin.4c78a032.eot);
+    src: url(../../static/media/Vazir-Thin.4c78a032.eot?#iefix) format('embedded-opentype'),
+        url(../../static/media/Vazir-Thin.f1d1b44a.woff2) format('woff2'),
+        url(../../static/media/Vazir-Thin.fe038606.woff) format('woff'),
+        url(../../static/media/Vazir-Thin.94cebd4d.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/*# sourceMappingURL=main.9ac61cb9.chunk.css.map*/
