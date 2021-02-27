@@ -46,7 +46,11 @@ jobs:
               run: npm run pre-deploy
 
             - name: Deploy
-              run: npm run deploy
+              run: |
+                git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+                npm run deploy 
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Archive production
               uses: actions/upload-artifact@v2
