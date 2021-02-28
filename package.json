@@ -21,7 +21,7 @@
     "test:unit": "cross-env CI=1 react-scripts test --coverage --env=jsdom ",
     "test:watch": "react-scripts test --env=jsdom",
     "pre-deploy": "build-storybook && cd example && npm install && npm run build",
-    "deploy": "gh-pages -u \"github-actions-bot <support+actions@github.com>\" -d storybook-static",
+    "deploy": "gh-pages-clean && gh-pages -u \"github-actions-bot <support+actions@github.com>\" -d storybook-static",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
