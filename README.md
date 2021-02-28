@@ -9,7 +9,7 @@
 [![codecov](https://codecov.io/gh/persian-tools/react-persian-tools/branch/master/graph/badge.svg)](https://codecov.io/gh/persian-tools/react-persian-tools)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/persian-tools/react-persian-tools/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange.svg)](https://github.com/persian-tools/react-persian-tools/compare) 
-[![CodeFactor](https://www.codefactor.io/repository/github/persian-tools/react-persian-tools/badge)](https://www.codefactor.io/repository/github/persian-tools/react-persian-tools)
+[![CodeFactor](https://www.codefactor.io/repository/github/persian-tools/react-persian-tools/badge/master)](https://www.codefactor.io/repository/github/persian-tools/react-persian-tools/overview/master)
 [![NPM](https://img.shields.io/npm/v/react-persian-tools.svg)](https://www.npmjs.com/package/react-persian-tools) 
 [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://persian-tools.github.io/react-persian-tools/)
 </div>
