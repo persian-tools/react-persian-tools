@@ -78,7 +78,6 @@ jobs:
               with:
                 tag_name: "v%s"
                 tag_message: "v%s"
-                create_tag: "true"
                 commit_pattern: "^Release (\\S+)"
                 workspace: "."
                 publish_command: "yarn"
