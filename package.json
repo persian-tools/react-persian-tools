@@ -2,9 +2,6 @@
   "name": "react-persian-tools",
   "version": "0.1.0",
   "description": "React wrapper component around persian tools",
-  "author": "persian-tools",
-  "license": "MIT",
-  "repository": "persian-tools/react-persian-tools",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
@@ -71,5 +68,27 @@
   ],
   "dependencies": {
     "@persian-tools/persian-tools": "^1.6.0-beta.4"
-  }
+  },
+  "author": "persian-tools",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/persian-tools/react-persian-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/persian-tools/react-persian-tools/issues"
+  },
+  "homepage": "https://persian-tools.github.io/react-persian-tools",
+  "keywords": [
+    "persian tools",
+    "number to persian words",
+    "persian words to number",
+    "Arabic numbers to Persian",
+    "Arabic numbers to English",
+    "English numbers to Persian",
+    "Persian numbers to English",
+    "verify iranian national id",
+    "verify iranian card-number",
+    "Persian zero-width non-joiner"
+  ]
 }

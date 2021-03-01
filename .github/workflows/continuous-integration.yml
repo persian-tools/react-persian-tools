@@ -59,3 +59,14 @@ jobs:
                   path: |
                       dist
                       !dist/**/*.md
+    publish:
+        if: github.event.push # Check its push
+        runs-on: ubuntu-latest
+      
+        strategy:
+            matrix:
+                node-version: [12.x]
+
+        steps:
+            - name: NPM Publish
+              run: echo "Deploying to production server on branch $GITHUB_REF"
