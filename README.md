@@ -17,6 +17,12 @@
 </div>
 <hr />
 
+## Demo
+
+https://persian-tools.github.io/react-persian-tools/
+
+![alt text](./images/demo.gif "Preview")
+
 ## Install
 
 ```bash
