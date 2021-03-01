@@ -60,7 +60,9 @@ jobs:
                       dist
                       !dist/**/*.md
     publish:
-        if: github.event.push # Check its push
+        needs: build
+        if: ${{ github.event_name == 'push' }} # Check its push
+
         runs-on: ubuntu-latest
       
         strategy:
