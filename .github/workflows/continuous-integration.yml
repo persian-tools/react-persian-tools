@@ -59,7 +59,7 @@ jobs:
                   path: |
                       dist
                       !dist/**/*.md
-    publish:
+    npm-publish:
         needs: build
         if: ${{ github.event_name == 'push' }} # Check its push
 
@@ -72,15 +72,6 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v2
-
-            - name: Github Packages Publish
-              uses: actions/setup-node@v1
-              with:
-                node-version: 12
-                registry-url: $registry-url(npm)
-              run: npm ci && npm publish
-              env:
-                NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
             - name: Publish if version has been updated
               uses: pascalgn/npm-publish-action@1.3.6
@@ -97,3 +88,23 @@ jobs:
 
             - name: NPM Publish
               run: echo "Deployed to production server on branch $GITHUB_REF"
+    github-packages-publish:
+        needs: npm-publish
+
+        runs-on: ubuntu-latest
+      
+        strategy:
+            matrix:
+                node-version: [12.x]
+
+        name: Github Packages Publish
+        steps:
+          - uses: actions/checkout@v2
+          - uses: actions/setup-node@v1
+            with:
+              node-version: 12
+              registry-url: $registry-url(npm)
+          - run: npm ci
+          - run: npm publish
+            env:
+              NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
