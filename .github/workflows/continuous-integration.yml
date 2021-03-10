@@ -81,7 +81,7 @@ jobs:
                 commit_pattern: "^Release (\\S+)"
                 workspace: "."
                 publish_command: "npm"
-                publish_args: "--non-interactive"
+                publish_args: "--non-interactive --access public"
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
