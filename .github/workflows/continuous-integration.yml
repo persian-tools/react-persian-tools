@@ -73,6 +73,15 @@ jobs:
             - name: Checkout repository
               uses: actions/checkout@v2
 
+            - name: Github Packages Publish
+              uses: actions/setup-node@v1
+              with:
+                node-version: 12
+                registry-url: $registry-url(npm)
+              run: npm ci && npm publish
+              env:
+                NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
             - name: Publish if version has been updated
               uses: pascalgn/npm-publish-action@1.3.6
               with:
@@ -80,7 +89,7 @@ jobs:
                 tag_message: "v%s"
                 commit_pattern: "^Release (\\S+)"
                 workspace: "."
-                publish_command: "npm"
+                publish_command: "yarn"
                 publish_args: "--non-interactive --access public"
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
