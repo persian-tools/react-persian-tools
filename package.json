@@ -1,6 +1,6 @@
 {
   "name": "@persian-tools/react-persian-tools",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "React wrapper component around persian tools",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
