@@ -80,9 +80,12 @@ jobs:
                 tag_message: "v%s"
                 commit_pattern: "^Release (\\S+)"
                 workspace: "."
+                publish_command: "npm"
+                publish_args: "--non-interactive --access public"
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+                NPM_AUTH_TOKEN: "324bbda1-2414-478e-8852-929d94791161"
+
 
             - name: NPM Publish
               run: echo "Deployed to production server on branch $GITHUB_REF"
