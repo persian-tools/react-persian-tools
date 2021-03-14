@@ -80,31 +80,29 @@ jobs:
                 tag_message: "v%s"
                 commit_pattern: "^Release (\\S+)"
                 workspace: "."
-                publish_command: "yarn"
-                publish_args: "--non-interactive --access public"
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
             - name: NPM Publish
               run: echo "Deployed to production server on branch $GITHUB_REF"
-    # github-packages-publish:
-    #     needs: npm-publish
+    github-packages-publish:
+        needs: npm-publish
 
-    #     runs-on: ubuntu-latest
+        runs-on: ubuntu-latest
       
-    #     strategy:
-    #         matrix:
-    #             node-version: [12.x]
+        strategy:
+            matrix:
+                node-version: [12.x]
 
-    #     name: Github Packages Publish
-    #     steps:
-    #       - uses: actions/checkout@v2
-    #       - run: npm ci
-    #       - uses: actions/setup-node@v1
-    #         with:
-    #           node-version: 12
-    #           registry-url: 'https://npm.pkg.github.com'
-    #       - run: npm publish
-    #         env:
-    #           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        name: Github Packages Publish
+        steps:
+          - uses: actions/checkout@v2
+          - run: npm ci
+          - uses: actions/setup-node@v1
+            with:
+              node-version: 12
+              registry-url: 'https://npm.pkg.github.com'
+          - run: npm publish
+            env:
+              NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
